@@ -16,7 +16,7 @@ public class Main {
         FileReader ArchivoLectura = new FileReader("codigos_postales.csv");
 
         BufferedReader ArchivoEscritura = new BufferedReader(ArchivoLectura);
-        String almacen = null;
+        String almacen;
         String dif = "Urbano";
         int ContadorU = 0;
         int ContadorR = 0;
@@ -39,6 +39,7 @@ public class Main {
             //Se muestran en la terminal los resultados
             System.out.println("El numero de zonas Urbanas es: " + ContadorU);
             System.out.println("El numero de zonas Rurales es: " + ContadorR);
+            System.out.println("El numero total de zonas es de :" + (ContadorU + ContadorR));
 
         }catch (FileNotFoundException e) {
             throw new RuntimeException(e);
@@ -47,4 +48,3 @@ public class Main {
         }
     }
 }
-//se actualiza el proyecto
