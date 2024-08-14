@@ -21,6 +21,9 @@ public class Main {
         int ContadorU = 0;
         int ContadorR = 0;
 
+
+
+        //parte del programa que determina el numero de zonas rurales y zonas urbanas
         while((almacen=ArchivoEscritura.readLine())!= null){
 
             //Se almacenan las palabras Urbano o Rural
